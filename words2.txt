@@ -1,2 +1,0 @@
-dog;dog;i like dogs
-cat;cat;Cats are strange
