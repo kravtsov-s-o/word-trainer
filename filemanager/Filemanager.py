@@ -7,9 +7,6 @@ class Filemanager:
         try:
             with open(file_path, 'r', encoding='utf-8') as file:
                 dictionary_str = file.read()
-                # words = eval(dictionary_str)
-                # if not isinstance(words, list):
-                #     words = list()
 
                 word_dicts = eval(dictionary_str)
                 if not isinstance(word_dicts, list):
@@ -26,3 +23,7 @@ class Filemanager:
         with open(file_path, 'w', encoding='utf-8') as file:
             dictionary_str = repr(word_dicts)
             file.write(dictionary_str)
+
+    @staticmethod
+    def new_words_from_file(file_path: str):
+        pass
